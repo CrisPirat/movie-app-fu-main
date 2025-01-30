@@ -1,0 +1,64 @@
+# 📦 Node.js Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# 🔐 Bloqueo de dependencias (según el gestor de paquetes)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# 🛠️ Build Outputs (Next.js, NestJS, etc.)
+.next/
+.nest/
+out/
+build/
+dist/
+
+# 🔍 Configuración local y variables de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.sentry-build-plugin
+
+# 🧪 Testing y cobertura
+coverage/
+jest.config.js
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# 🚀 Plataformas de despliegue (Vercel, Turbo)
+.vercel/
+.turbo/
+
+# ⚡ Sentry Configuración
+.sentryclirc
+
+# 🛠️ Archivos de desarrollo y depuración
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 🔹 Archivos del sistema y configuración de macOS/IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 🔑 Certificados y claves sensibles
+.cert/
+certificates/
+*.pem
+*.crt
+*.key
+
+# 🚫 Archivos y directorios temporales/marcados como antiguos
+__OLD_PAGES/
+__OLD/
