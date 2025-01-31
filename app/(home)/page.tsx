@@ -28,15 +28,15 @@ export default async function Home() {
         <TrendCarousel type="movie" title="Trending Movies" link="/trending/movie" items={movies} />
 
         <div className="grid gap-4 md:grid-cols-2">
-          <MovieHero movies={movies.slice(0, 10)} label="Trending Now" count={2} />
-          <TvHero tvShows={tvShows.slice(0, 10)} label="Trending Now" count={2} />
+          <MovieHero movies={movies?.slice(0, 10)} label="Trending Now" count={2} />
+          <TvHero tvShows={tvShows?.slice(0, 10)} label="Trending Now" count={2} />
         </div>
 
         <TrendCarousel type="tv" title="Trending TV Shows" link="/trending/tv" items={tvShows} />
 
         <div className="grid gap-4 md:grid-cols-2">
-          <MovieHero movies={movies.slice(10, 20)} label="Trending Now" count={2} />
-          <TvHero tvShows={tvShows.slice(10, 20)} label="Trending Now" count={2} />
+          <MovieHero movies={movies?.slice(10, 20)} label="Trending Now" count={2} />
+          <TvHero tvShows={tvShows?.slice(10, 20)} label="Trending Now" count={2} />
         </div>
       </div>
     </section>

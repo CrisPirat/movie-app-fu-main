@@ -1,3 +1,4 @@
+/*
 import { clerkMiddleware } from "@clerk/nextjs/server";
 
 export default clerkMiddleware();
@@ -9,4 +10,15 @@ export const config = {
     // Always run for API routes
     "/(api|trpc)(.*)",
   ],
+};
+*/
+
+import { NextRequest, NextResponse } from "next/server";
+
+export function middleware(req: NextRequest) {
+  return NextResponse.next(); // Deja pasar todas las solicitudes sin restricciones
+}
+
+export const config = {
+  matcher: "/api/:path*",
 };
