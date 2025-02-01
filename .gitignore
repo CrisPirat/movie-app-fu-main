@@ -22,6 +22,12 @@ dist/
 .env.test.local
 .env.production.local
 .env.sentry-build-plugin
+env
+env.local
+env.development.local
+env.test.local
+env.production.local
+env.sentry-build-plugin
 
 # 🧪 Testing y cobertura
 coverage/
